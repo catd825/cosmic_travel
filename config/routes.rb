@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :about, only: :index
   resources :missions
   resources :scientists
   resources :planets

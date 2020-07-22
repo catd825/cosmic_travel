@@ -11,6 +11,10 @@
 <p> Name: <%= @scientist.name %> </p>
 <p>Field of Study: <%= @scientist.field_of_study %> </p>
 
+<% @scientist.planets.each do |planet| %> 
+<p>Planets: <%= planet.name %> </p>
+<% end %>
+
 
 <%= link_to 'Edit', edit_scientist_path(@scientist) %> |
 <%= link_to 'Back', scientists_path %>
